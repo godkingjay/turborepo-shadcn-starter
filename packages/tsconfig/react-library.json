@@ -8,5 +8,12 @@
     "target": "ES6",
     "jsx": "react-jsx",
     "noEmit": true
-  }
+  },
+  "include": [
+    ".",
+    "src/**/*",
+    "components/**/*",
+    "lib/**/*",
+    "styles/**/*",
+  ],
 }

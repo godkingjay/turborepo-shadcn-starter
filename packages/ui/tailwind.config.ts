@@ -1,17 +1,14 @@
 // tailwind config is required for editor support
 import type { Config } from "tailwindcss";
-import sharedConfig from "tailwind-config/tailwind.config";
+import sharedConfig from "tailwind-config/tailwind.config.ts";
 
-const config: Config = {
+const config: Pick<
+  Config,
+    | "presets"
+    | "theme"
+    | "plugins"
+  > = {
 	presets: [sharedConfig],
-  darkMode: ["class"],
-  content: [
-    './**/*.{ts,tsx}',
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
   theme: {
     container: {
       center: true,
