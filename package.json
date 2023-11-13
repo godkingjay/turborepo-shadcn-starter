@@ -11,7 +11,8 @@
 		"eslint": "pnpm --filter eslint-config-custom",
 		"tailwind": "pnpm --filter tailwind-config",
 		"tsconfig": "pnpm --filter tsconfig",
-		"ui": "pnpm --filter ui"
+		"ui": "pnpm --filter ui",
+		"ui:add": "pnpm --filter ui ui:add"
 	},
 	"devDependencies": {
 		"eslint": "^8.53.0",
