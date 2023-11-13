@@ -60,12 +60,12 @@ const config: Pick<
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0px" },
+          from: { height: "px" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0px" },
+          to: { height: "px" },
         },
       },
       animation: {

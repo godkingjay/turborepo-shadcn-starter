@@ -3,6 +3,8 @@
 	"scripts": {
 		"build": "turbo build",
 		"dev": "turbo dev",
+		"start": "turbo start",
+		"start:local": "turbo start:local",
 		"lint": "turbo lint",
 		"clean": "turbo clean",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
