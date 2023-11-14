@@ -2,7 +2,7 @@
 
 ## Using this template
 
-Do either of the following `Fork` this template repository.
+`Fork` this template repository.
 
 ## What's inside?
 
