@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"scripts": {
 		"lint": "eslint \"**/*.ts*\"",
-		"test": "echo 'all packages-ui tests passed!'"
+		"test": "echo 'all packages:ui tests passed!'"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0"

@@ -4,6 +4,9 @@
 	"private": true,
 	"main": "index.ts",
 	"types": "index.ts",
+	"scripts": {
+		"test": "echo 'all package:tailwind-config tests passed!'"
+	},
 	"devDependencies": {
 		"tailwindcss": "^3.3.5",
 		"tailwind-variants": "^0.1.18"

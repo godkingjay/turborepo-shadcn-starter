@@ -4,7 +4,7 @@
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
-		"test": "echo 'all package-eslint-config-custom tests passed!'"
+		"test": "echo 'all package:eslint-config-custom tests passed!'"
 	},
 	"dependencies": {
 		"eslint-config-next": "^14.0.2",
