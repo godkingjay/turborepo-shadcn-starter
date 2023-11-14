@@ -1,12 +1,19 @@
 {
 	"name": "ui",
 	"version": "1.0.0",
-	"main": "./index.tsx",
-	"types": "./index.tsx",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": "./dist/index.mjs",
+		"./tailwind.config": "./tailwind.config.ts",
+		"./globals.css": "./dist/index.css"
+	},
 	"license": "MIT",
 	"scripts": {
+		"dev": "tsup --watch",
+		"build": "tsup",
 		"lint": "eslint \"**/*.ts*\"",
-		"test": "echo 'all packages:ui tests passed!'"
+		"test": "echo 'all packages:ui tests passed!'",
+		"ui:add": "npx shadcn-ui@latest add"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0"
@@ -27,5 +34,14 @@
 		"tailwindcss": "^3.3.5",
 		"tsconfig": "*",
 		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"@radix-ui/react-slot": "^1.0.2",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.0.0",
+		"lucide-react": "^0.292.0",
+		"tailwind-merge": "^2.0.0",
+		"tailwindcss-animate": "^1.0.7",
+		"tsup": "^6.2.0"
 	}
 }
