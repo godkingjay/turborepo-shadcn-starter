@@ -4,7 +4,7 @@ export default defineConfig((options: Options) => ({
     treeshake: true,
     splitting: true,
     entry: [
-        "./src/**/*.tsx",
+        "./src/**/*.{ts,tsx}"
     ],
     format: ["esm"],
     dts: true,
