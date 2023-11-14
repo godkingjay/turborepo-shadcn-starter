@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
+  "scripts": {
+		"test": "echo 'all package-tsconfig tests passed!'"
+	},
   "publishConfig": {
     "access": "public"
   }

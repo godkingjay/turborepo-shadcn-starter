@@ -1,5 +1,9 @@
 {
 	"private": true,
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
 	"scripts": {
 		"build": "turbo build",
 		"dev": "turbo dev",
@@ -8,21 +12,21 @@
 		"lint": "turbo lint",
 		"clean": "turbo clean",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
-		"docs": "pnpm --filter docs",
-		"web": "pnpm --filter web",
-		"eslint": "pnpm --filter eslint-config-custom",
-		"tailwind": "pnpm --filter tailwind-config",
-		"tsconfig": "pnpm --filter tsconfig",
-		"ui": "pnpm --filter ui",
-		"ui:add": "pnpm --filter ui ui:add"
+		"docs": "yarn workspace docs",
+		"web": "yarn workspace web",
+		"eslint": "yarn workspace eslint-config-custom",
+		"tailwind": "yarn workspace tailwind-config",
+		"tsconfig": "yarn workspace tsconfig",
+		"ui": "yarn workspace ui",
+		"ui:add": "yarn workspace ui ui:add"
 	},
 	"devDependencies": {
 		"eslint": "^8.53.0",
 		"prettier": "^3.0.3",
 		"prettier-plugin-tailwindcss": "^0.5.7",
-		"tsconfig": "workspace:*",
+		"tsconfig": "*",
 		"turbo": "^1.10.16",
-		"eslint-config-custom": "workspace:*"
+		"eslint-config-custom": "*"
 	},
-	"packageManager": "pnpm@8.10.2"
+	"packageManager": "yarn@1.22.19"
 }

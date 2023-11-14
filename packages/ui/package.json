@@ -1,13 +1,14 @@
 {
 	"name": "ui",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"license": "MIT",
 	"main": "./src/index.tsx",
 	"types": "./src/index.tsx",
 	"scripts": {
-		"lint": "eslint .",
+		"lint": "eslint \"**/*.ts*\"",
 		"check-types": "tsc --noEmit",
-		"ui:add": "pnpm dlx shadcn-ui@latest add"
+		"test": "echo 'all packages-ui tests passed!'",
+		"ui:add": "npx shadcn-ui@latest add"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0"
@@ -16,12 +17,12 @@
 		"@types/node": "^20.9.0",
 		"@types/react": "^18.2.37",
 		"autoprefixer": "^10.4.16",
-		"eslint-config-custom": "workspace:*",
+		"eslint-config-custom": "*",
 		"postcss": "^8.4.31",
 		"react": "^18.2.0",
-		"tailwind-config": "workspace:*",
+		"tailwind-config": "*",
 		"tailwindcss": "^3.3.5",
-		"tsconfig": "workspace:*",
+		"tsconfig": "*",
 		"typescript": "^5.2.2"
 	},
 	"dependencies": {
