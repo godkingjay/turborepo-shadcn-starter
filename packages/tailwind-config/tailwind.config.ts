@@ -10,10 +10,6 @@ const config: Config = {
 		"./providers/**/*.{js,ts,jsx,tsx,mdx}",
 		"../../packages/ui/**/*.{js,ts,jsx,tsx,mdx}",
 	],
-	theme: {
-		extend: {},
-	},
 	darkMode: "class",
-	plugins: [],
 };
 export default config;

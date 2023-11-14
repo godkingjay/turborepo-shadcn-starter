@@ -1,4 +1,4 @@
-import { GithubIcon } from "lucide-react";
+import { Github } from "lucide-react";
 import Link from "next/link";
 import {
 	Button,
@@ -25,7 +25,7 @@ export default function Page(): JSX.Element {
 							target="_blank"
 						>
 							<Button className="w-full">
-								<GithubIcon className="mr-2 h-4 w-4" /> GitHub
+								<Github className="mr-2 h-4 w-4" /> GitHub
 							</Button>
 						</Link>
 					</CardContent>
