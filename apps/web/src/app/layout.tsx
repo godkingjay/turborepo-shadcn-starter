@@ -1,5 +1,5 @@
-import "./globals.css";
-import "ui/src/styles/globals.css";
+import "./globals.scss";
+import "ui/styles/globals.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 

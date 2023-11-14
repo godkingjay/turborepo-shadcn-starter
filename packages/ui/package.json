@@ -1,14 +1,12 @@
 {
 	"name": "ui",
 	"version": "1.0.0",
+	"main": "./index.tsx",
+	"types": "./index.tsx",
 	"license": "MIT",
-	"main": "./src/index.tsx",
-	"types": "./src/index.tsx",
 	"scripts": {
 		"lint": "eslint \"**/*.ts*\"",
-		"check-types": "tsc --noEmit",
-		"test": "echo 'all packages-ui tests passed!'",
-		"ui:add": "npx shadcn-ui@latest add"
+		"test": "echo 'all packages-ui tests passed!'"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0"
@@ -16,21 +14,18 @@
 	"devDependencies": {
 		"@types/node": "^20.9.0",
 		"@types/react": "^18.2.37",
+		"@types/react-dom": "^18.2.15",
 		"autoprefixer": "^10.4.16",
 		"eslint-config-custom": "*",
+		"next": "^14.0.2",
 		"postcss": "^8.4.31",
 		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"sass": "^1.69.5",
 		"tailwind-config": "*",
+		"tailwind-variants": "^0.1.18",
 		"tailwindcss": "^3.3.5",
 		"tsconfig": "*",
 		"typescript": "^5.2.2"
-	},
-	"dependencies": {
-		"@radix-ui/react-slot": "^1.0.2",
-		"class-variance-authority": "^0.7.0",
-		"clsx": "^2.0.0",
-		"lucide-react": "^0.292.0",
-		"tailwind-merge": "^2.0.0",
-		"tailwindcss-animate": "^1.0.7"
 	}
 }
